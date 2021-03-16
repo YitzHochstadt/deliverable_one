@@ -1,0 +1,134 @@
+body{
+    margin: 0 5em;
+    font-family: 'Bungee';
+    text-align: left;
+}
+.nav-list{
+    float: right;
+    list-style: none;
+    margin-top: 2.125em;
+}
+.nav-list li{
+    display: inline-block;
+    color: #7944e6;
+    margin-left: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #7944e6;
+}
+a:hover,
+a:active{
+    text-decoration: none;
+    color: #10fdff;
+    transition: color 0.2s;
+}
+.logo{
+    float: left;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    background-color: #ff00ff;
+    padding: 1em;
+    font-size: 1em;
+    padding-left: 2.5em;
+    align-items: center;
+}
+h1{
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+h2{
+    margin-top: 0em;
+    font-size: 115%;
+}
+p{
+    margin-top: 0;
+}
+.foodTruck{
+    text-align: center;
+    margin-top: 1.875em;
+    margin-left: 5%;
+    height: auto;
+    width: 45%;
+    align-items: center;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.875em;
+    width: min-content;
+    margin-left: 5.5em;
+    padding: 1.563em 0;
+    border: 5px solid #7944e6;
+    font-size: 1.5em;
+}
+.coffeeTab,
+.creamTab,
+.cookiesTab{
+    width: 325px;
+    height: auto;
+    padding: 0.563em 0;
+}
+.tabsRow{
+    justify-content: center;
+}
+.cookies{
+    margin-bottom: 1.25em;
+}
+
+@media screen and (min-width: 768px){
+    .about{
+        flex-direction: row;
+        margin-bottom: .625em;
+        display: flex;
+    }
+    .foodTruck{
+        margin: 0 2.188em;
+    }
+    .tabsRow{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .tabs{
+        margin: .625em 1.25em;
+        width: 33%;
+        height: 17em;
+    }
+    .coffeeTab,
+    .creamTab,
+    .cookiesTab{
+        justify-content: left;
+        width: 80%;
+        height: 13em;
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    .cream{
+        height: 10em;
+    }
+}
+/*
+Colors:
+
+#ff00ff #ff00ff. 
+Background accent 
+
+#7944e6 #7944e6
+
+Navigation links
+Border on three rectangles
+
+#10fdff #10fdff.
+
+Navigation links on hover
+
+*/
